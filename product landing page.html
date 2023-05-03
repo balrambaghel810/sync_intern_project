@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+    
+       .container{
+            background-image: url(https://w0.peakpx.com/wallpaper/140/895/HD-wallpaper-material-design-616-abstract-android-black-digital-green-lines-material-design-modern.jpg);
+            background-position: center;
+            background-size: cover;
+            padding-right: 3%;
+            padding-left: 5%;
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+           
+        }
+        
+.header{ 
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+  align-items: center;
+    
+}
+.logo{
+    width: 110px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    padding-left:450px ;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+li a{
+    position: relative;
+    text-transform: uppercase; 
+    color: rgb(221, 221, 221);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* hover underline in the anchor tag. */
+a:hover{color: #ffffff;}
+a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#ffffff;
+    transform-origin:top left;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+    }
+    a:hover::before{
+        transform: scaleX(1);
+    }
+
+#btn1{
+    text-transform:uppercase;
+    background: linear-gradient(to bottom,#02a802 3%, #005c20 100%);
+    border-radius: 30px;
+    border: 1px solid #5e97d1;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px red;
+    text-shadow: 0px 1px 0px green;
+}
+#btn2{
+    text-transform:uppercase;
+    background: linear-gradient(to bottom,#02a802 3%, #005c20 100%);
+    border-radius: 30px;
+    border: 1px solid #5e97d1;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: 1px 4px 12px red;
+    text-shadow: 0px 1px 0px green;
+
+}
+.btn:hover{
+    box-shadow: 3px 22px 22px rgb(32, 218, 193);
+    text-shadow: 0px 3px 0px rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition:.1s ease-in-out; 
+}
+.content{
+   position: relative;
+   display: flex;
+   width: 100%;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.content .text{
+    position: relative;
+    max-width: 600px;
+}
+.content .text h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    margin-top: 40px;
+    color: #e7e3e3;
+    font-size: 40px;
+
+}
+.content .text p{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .5em;
+    margin-top: 40px;
+    color: #e7e3e3;
+}
+#btn3{
+     background: linear-gradient(to bottom,#02a802 3%, #005c20 100%);
+     margin-top: 60px;
+     margin-left: 140px;
+     padding: 15px 30px;
+     border: none;
+     color: #fff;
+     font-size: 17px;
+     border-radius: 30px;
+     font-weight: 700;
+     box-shadow: 1px 4px 12px red;
+     border: 1px solid #008c02;
+     /* cursor:pointer; */
+       
+}
+#btn3:hover{
+    color: #005c20;
+}
+
+
+
+.mountain{
+    display:flex;
+    height: 100%;
+    position:absolute;
+    width: 600px;
+    margin-top: 300px;
+    padding-left: 440px;
+    justify-content:end;
+}
+    h2{
+        color: white;
+        font-family: 'Russo One', sans-serif;
+        text-align: center;
+    }
+    .product:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes shake {
+        0% {transform: translate(1px, 1px) rotate(0deg);}
+        10% {transform: translate(-1px, -2px) rotate(-1deg);}
+        20% {transform: translate(-3px, 0px) rotate(1deg);}
+        30% {transform: translate(3px, 2px) rotate(0deg);}
+        40% {transform: translate(1px, -1px) rotate(1deg);}
+        50% {transform: translate(-1px, 2px) rotate(-1deg);}
+        60% {transform: translate(-3px, 1px) rotate(0deg);}
+        70% {transform: translate(3px, 1px) rotate(-1deg);}
+        80% {transform: translate(-1px, -1px) rotate(1deg);}
+        90% {transform: translate(1px, 2px) rotate(0deg);}
+        100% {transform: translate(1px, -2px) rotate(-1deg);}
+    }
+    .product{
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+    <img class="logo" src="https://www.mountaindew.com/wp-content/uploads/2022/11/cropped-logo-mtndew-primary-v2.png.webp" class="logo">
+    <nav>
+    <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">PRODUCTS</a></li>
+    <li><a href="#">SHOP</a></li>
+    <li><a href="#">CONTACT</a></li>
+</ul></nav>
+    <button class="btn" id="btn1">LOG IN</button>
+    <button class="btn" id="btn2">SIGN UP</button>
+</div>
+
+<div class="content">
+    <div class="text">
+        <p style="color: rgb(205, 205, 205);">DEW OVERLOAD !</p>
+        <h2>WELCOME TO THE DEW<br> HALL OF FAME <br>WEAR YOUR DEW <br> PASSION ON YOUR <br> SLEEVE</h2>
+        <button class="btn" id="btn3">BUY NOW</button>
+    </div>
+<div class="mountain">
+<img class="product" src="https://www.mountaindew.com/wp-content/uploads/2022/12/amp-original-min.png" alt=""> 
+<img class="product" src="https://www.mountaindew.com/wp-content/uploads/2022/12/4730221_EC_Front@2x-1-960x2241.png" alt="">
+</div>
+</div>
+</div>
+</body>
+</html>
